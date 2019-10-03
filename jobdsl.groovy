@@ -4,7 +4,7 @@ pipelineJob('DSL-Pipeline-HappyTrip') {
             scm { 
        git {
             remote {
-                url('https://github.com/jenkinsci/job-dsl-plugin.git')
+                url('https://github.com/jha-raghav/HappyTrip.git')
 				credentials('GitHub-Credential')
             }
 			branch('master')
