@@ -2,12 +2,7 @@ pipelineJob('DSL-Pipeline-HappyTrip') {
     definition {
         cpsScm {
             scm { 
-        git { 
-            remote { 
-                github('jha-raghav/HappyTrip', 'ssh') 
-                credentials('GitHub-Credential') 
-            } 
-        } 
+      git('https://github.com/jenkinsci/job-dsl-plugin.git','master','GitHub-Credential')
     }
           scriptPath('Code/Jenkins.txt')
         }
